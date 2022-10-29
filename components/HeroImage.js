@@ -7,7 +7,7 @@ function HeroImage(props) {
     <Link href={props.slug && "/posts/" + props.slug}>
       <div className={styles.container}>
         <picture>
-          <img src={props.image} className={styles.hero} />
+          <img src={props.image} className={styles.hero} alt={props.title} />
         </picture>
         <p className={styles.subtitle}>
           <span className={styles.lines}>Latest Post</span>
