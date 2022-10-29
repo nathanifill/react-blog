@@ -2,13 +2,15 @@
 
 This project is (rather unoriginally) called "React Blog". (Technically, it's a Next.js blog but that's just being picky.)
 
+I've nicknamed it "The Running Dog Blog".
+
 ## Project Description
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). There's no special reason that I used Next.js except that I haven't used it before and thought it was worth trying it out.
 
 This blog uses [Hygraph](https://app.hypgraph.com) for the back-end which is where the authors, posts and assets (e.g. images) are pulled from using GraphQL.
 
-Some features I'd like to implement in the future are dynamic category pages
+Some features I'd like to implement in the future are in the menus: making dynamic category pages and making the subscribe button do something.
 
 ## How to install and run the project
 
@@ -27,6 +29,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+I'd also suggest updating the social links in the Footer component otherwise you'll be sending lots of people to my really boring social media profiles.
 
 ## Learn More
 

@@ -7,7 +7,7 @@ function Logo(props) {
   return (
     <Link href="/">
       <img
-        src="/assets/logo2.png"
+        src="/assets/logo.png"
         className={!props.grayscale ? styles.logo : styles.logogray}
         alt={BLOG_NAME}
         title={BLOG_NAME}
