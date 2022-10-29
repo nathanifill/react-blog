@@ -80,7 +80,9 @@ function BlogPost({ post }) {
   return (
     <main className={styles.blogpost}>
       <Navigation />
-      <img src={post.coverImage.url} className={styles.coverimage} />
+      <picture className={styles.picture}>
+        <img src={post.coverImage.url} className={styles.coverimage} />
+      </picture>
       <h1 className={styles.title}>{post.title}</h1>
       {/* prettier-ignore */}
       <p className={styles.datepublished}>Published on {format(datePublished, "d MMMM yyyy")} by {post.author.name}</p>
