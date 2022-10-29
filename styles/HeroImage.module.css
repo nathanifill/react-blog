@@ -1,0 +1,76 @@
+.container {
+  cursor: pointer;
+  height: 50vh;
+  padding-top: 6.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  filter: brightness(0.3);
+  max-height: 40vh;
+  object-fit: cover;
+  width: 100%;
+
+  transition: filter 2s ease-in-out, object-position 2s ease-in-out;
+}
+
+.container:hover .hero {
+  filter: brightness(0.15);
+  object-position: 0% 0%;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  top: 25%;
+}
+
+.title {
+  font-size: 4rem;
+  top: 40%;
+}
+
+.subtitle,
+.title {
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  transition: top 2s ease-in-out;
+}
+
+.container:hover .subtitle {
+  top: 30%;
+}
+
+.container:hover .title {
+  top: 50%;
+}
+
+.lines {
+  display: inline-block;
+  position: relative;
+
+  --line-margin: 1.5rem;
+}
+
+.lines:before,
+.lines:after {
+  border-top: 1px solid #e4e4e4;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+}
+
+.lines:before {
+  margin-right: var(--line-margin);
+  right: 100%;
+}
+.lines:after {
+  left: 100%;
+  margin-left: var(--line-margin);
+}

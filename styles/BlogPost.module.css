@@ -1,0 +1,35 @@
+.blogpost {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #1c1c1c;
+}
+
+.coverimage {
+  width: 100%;
+  height: 18rem;
+  min-height: 35vh;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0 3rem;
+  width: 100%;
+  max-width: 70rem;
+  font-size: 1.5rem;
+}
+
+.datepublished {
+  margin: 1rem 3rem;
+  color: #5e5e5e;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.title {
+  margin: 5rem 3rem 0 2.75rem;
+  font-weight: 300;
+  font-size: 3.5rem;
+  text-align: center;
+}

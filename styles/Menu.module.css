@@ -1,0 +1,24 @@
+.menu {
+  --list-item-padding: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-inline-start: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.menu div li:not(.notlink) {
+  transition: color 0.2s ease-in;
+  cursor: pointer;
+  margin: 0 var(--list-item-padding);
+}
+
+.menu div li:not(.notlink):hover {
+  color: var(--red);
+}
+
+.menu div li.notlink {
+  margin-left: var(--list-item-padding);
+}

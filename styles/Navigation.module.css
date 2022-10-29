@@ -1,0 +1,23 @@
+.header {
+  align-items: center;
+  background-color: #fafafa;
+  display: flex;
+  /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05); */
+  height: 6.5rem;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: var(--content-width);
+  text-align: center;
+  width: 70%;
+}

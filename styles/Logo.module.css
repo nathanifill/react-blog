@@ -1,0 +1,12 @@
+.logo,
+.logogray {
+  cursor: pointer;
+  height: 2.75rem;
+  transition: transform 0.1s ease-in;
+  width: auto;
+}
+
+.logogray {
+  filter: grayscale(100%) opacity(50%);
+  margin-right: 1rem;
+}

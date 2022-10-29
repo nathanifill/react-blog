@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+html {
+  font-size: 62.5%; /* 10px/16px = 62.5% => 1rem = 10px */
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
 html,
 body {
+  background-color: var(--off-white);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,12 +22,12 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.react-icons {
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.react-icons:hover {
+  color: var(--red);
 }
