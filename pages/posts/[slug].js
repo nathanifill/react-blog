@@ -81,7 +81,7 @@ function BlogPost({ post }) {
     <main className={styles.blogpost}>
       <Navigation />
       <picture className={styles.picture}>
-        <img src={post.coverImage.url} className={styles.coverimage} />
+        <img src={post.coverImage.url} className={styles.coverimage} alt={post.title}/>
       </picture>
       <h1 className={styles.title}>{post.title}</h1>
       {/* prettier-ignore */}
