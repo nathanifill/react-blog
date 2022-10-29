@@ -1,18 +1,18 @@
 .container {
   cursor: pointer;
-  height: 50vh;
-  padding-top: 6.5rem;
+  /* height: 50vh; */
+  /* padding-top: 6.5rem; */
   position: relative;
   width: 100%;
 }
 
 .hero {
   filter: brightness(0.3);
-  max-height: 40vh;
+  max-height: 50vh; /* 40vh */
   object-fit: cover;
-  width: 100%;
 
   transition: filter 2s ease-in-out, object-position 2s ease-in-out;
+  width: 100%;
 }
 
 .container:hover .hero {
@@ -23,12 +23,14 @@
 .subtitle {
   font-size: 1.5rem;
   text-transform: uppercase;
-  top: 25%;
+  top: 30%;
 }
 
 .title {
   font-size: 4rem;
-  top: 40%;
+  max-width: 70rem;
+  width: 90%;
+  top: 45%;
 }
 
 .subtitle,
@@ -38,12 +40,12 @@
   position: absolute;
   text-align: center;
   transform: translate(-50%, -50%);
-  z-index: 90;
   transition: top 2s ease-in-out;
+  z-index: 90;
 }
 
 .container:hover .subtitle {
-  top: 30%;
+  top: 35%;
 }
 
 .container:hover .title {
@@ -73,4 +75,41 @@
 .lines:after {
   left: 100%;
   margin-left: var(--line-margin);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+  .subtitle {
+    width: 90%;
+  }
+  .title {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .subtitle {
+    top: 0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .subtitle {
+    display: none;
+  }
+  .title {
+    top: 50%;
+  }
 }

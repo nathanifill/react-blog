@@ -11,7 +11,7 @@ function Menu(props) {
 
   function StandardMenu() {
     return (
-      <div className={styles.menu}>
+      <div className={styles.menumain}>
         <Link href="/">
           <li>Home</li>
         </Link>

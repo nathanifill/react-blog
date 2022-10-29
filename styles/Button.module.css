@@ -37,3 +37,10 @@
 .btnCta:hover {
   background-color: darkred;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+  .btnCta {
+    /* display: none; */
+  }
+}

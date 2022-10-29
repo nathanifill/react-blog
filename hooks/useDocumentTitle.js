@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { BLOG_NAME, TITLE_SEPARATOR } from "../pages/config";
 
 const useDocumentTitle = (title) => {
   const [documentTitle, setDocumentTitle] = useState(title);
 
   useEffect(() => {
-    document.title = documentTitle;
+    document.title = documentTitle + " " + TITLE_SEPARATOR + " " + BLOG_NAME;
   }, [documentTitle]);
 
   return [documentTitle, setDocumentTitle];

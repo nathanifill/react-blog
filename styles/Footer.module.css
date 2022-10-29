@@ -31,3 +31,20 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 550px) {
+  .legal {
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .legal,
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav {
+    width: 80vw;
+  }
+}

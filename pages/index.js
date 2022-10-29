@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import HeroImage from "../components/HeroImage";
 import { useState } from "react";
 import Button from "../components/Button";
-import { STARTING_NUMBER_OF_POSTS } from "./config";
+import { BLOG_NAME, STARTING_NUMBER_OF_POSTS } from "./config";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 const hygraph = new GraphQLClient(
@@ -52,7 +52,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  const [documentTitle, setDocumentTitle] = useDocumentTitle("Home page");
+  const [documentTitle, setDocumentTitle] = useDocumentTitle("Home");
 
   const [postCount, setPostCount] = useState(STARTING_NUMBER_OF_POSTS);
   // Loads the first

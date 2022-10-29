@@ -31,3 +31,17 @@ a {
 .react-icons:hover {
   color: var(--red);
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 56.25%; /* 9px/16px = 56.25% => 1rem = 9px */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%; /* 8px/16px = 56.25% => 1rem = 8px */
+  }
+}

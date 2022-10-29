@@ -72,9 +72,7 @@ export async function getStaticProps({ params }) {
 }
 
 function BlogPost({ post }) {
-  const [documentTitle, setDocumentTitle] = useDocumentTitle(
-    post.title + " | " + BLOG_NAME
-  );
+  const [documentTitle, setDocumentTitle] = useDocumentTitle(post.title);
 
   const datePublished = new Date(post.datePublished);
   console.log(datePublished);

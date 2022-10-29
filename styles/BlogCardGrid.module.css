@@ -5,7 +5,24 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 2rem;
   row-gap: 1rem;
   width: var(--content-width);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    width: 0%;
+  }
 }
