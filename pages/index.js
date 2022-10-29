@@ -7,8 +7,8 @@ import Footer from "../components/Footer";
 import HeroImage from "../components/HeroImage";
 import { useState } from "react";
 import Button from "../components/Button";
-import { BLOG_NAME, STARTING_NUMBER_OF_POSTS } from "./config";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { STARTING_NUMBER_OF_POSTS } from "./_app";
 
 const hygraph = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/cl9k5hy8q2x8b01t85soof167/master"

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BLOG_NAME, TITLE_SEPARATOR } from "../pages/config";
+import { BLOG_NAME, TITLE_SEPARATOR } from "../pages/_app";
 
 const useDocumentTitle = (title) => {
   const [documentTitle, setDocumentTitle] = useState(title);

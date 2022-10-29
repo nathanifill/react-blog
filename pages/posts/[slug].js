@@ -4,7 +4,6 @@ import { format } from "date-fns";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
-import { BLOG_NAME } from "../config";
 
 const hygraph = new GraphQLClient(
   "https://api-eu-west-2.hygraph.com/v2/cl9k5hy8q2x8b01t85soof167/master"
