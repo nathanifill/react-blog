@@ -1,6 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Title
 
-## Getting Started
+This project is (rather unoriginally) called "React Blog". (Technically, it's a Next.js blog but that's just being picky.)
+
+## Project Description
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). There's no special reason that I used Next.js except that I haven't used it before and thought it was worth trying it out.
+
+This blog uses [Hygraph](https://app.hypgraph.com) for the back-end which is where the authors, posts and assets (e.g. images) are pulled from using GraphQL.
+
+Some features I'd like to implement in the future are dynamic category pages
+
+## How to install and run the project
 
 First, run the development server:
 
@@ -33,6 +43,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Inspiration
+## Credits
 
-The design was heavily inspired by [Michael Terry's Minimalist Blog Concept](https://www.behance.net/gallery/58000685/Minimalist-Blog-Concept?tracking_source=search_projects_appreciations%7Cblog+minimalist). Go and check out his work and show him some love.
+The design was _heavily_ inspired by [Michael Terry's Minimalist Blog Concept](https://www.behance.net/gallery/58000685/Minimalist-Blog-Concept?tracking_source=search_projects_appreciations%7Cblog+minimalist). (I basically copied it pixel for pixel and then changed bits that I didn't like.) Go and check out his work and show him some love.
+
+Also, big shout out to [Simo Edwin](https://github.com/developedbyed/) for his amazing [YouTube video on Hygraph](https://youtu.be/Dc7LAgqy1_E).
