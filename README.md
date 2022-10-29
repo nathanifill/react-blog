@@ -43,7 +43,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Netlify
 
-The easiest way to deploy your Next.js app is to use the [Netlify Platform]. If you try and deploy on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js, you get a weird deprecation error to do with the icons used for socials.
+The easiest way to deploy your Next.js app is to use the [Netlify Platform]. If you try and deploy on [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the platform from the creators of Next.js, you get a weird deprecation error to do with the icons used for socials. I believe this is a known issue with Node 16.x so if you upload with Node 14.x, you may not have any issues whatsoever. Happy deploying!
 
 Either way, the [Next.js deployment documentation](https://nextjs.org/docs/deployment) has more options and details.
 
