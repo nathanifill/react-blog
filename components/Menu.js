@@ -11,7 +11,7 @@ function Menu(props) {
 
   function StandardMenu() {
     return (
-      <div className={styles.menumain}>
+      <menu className={styles.menustandard}>
         <Link href="/">
           <li>Home</li>
         </Link>
@@ -27,14 +27,14 @@ function Menu(props) {
         <Link href="/">
           <li>Controversial</li>
         </Link>
-      </div>
+      </menu>
       // keep this simple and put in a blog title
     );
   }
 
   function LegalMenu() {
     return (
-      <div className={styles.menu}>
+      <menu className={styles.menulegal}>
         <Link href="/">
           <li>Contact</li>
         </Link>
@@ -45,15 +45,15 @@ function Menu(props) {
           <li>Terms and Conditions</li>
         </Link>
         <li className={styles.notlink}>&copy; {getYear()}</li>
-      </div>
+      </menu>
     );
   }
 
   return (
-    <menu className={styles.menu}>
+    <>
       {!props.legal ? <StandardMenu /> : <LegalMenu />}
       {/* If prop.legal not set, show standard menu, otherwise show legal menu */}
-    </menu>
+    </>
   );
 }
 
